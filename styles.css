@@ -1,0 +1,203 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: auto;
+}
+
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem 0;
+    color: white;
+    background: #2d3945;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.8rem;
+    color: #bec2c5;
+}
+
+label {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.headering {
+    margin: auto;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid #2d3945;
+    width: 90%;
+}
+
+header h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+header p {
+    margin-top: 0.5rem;
+    padding-top: 0;
+}
+
+.contact-section {
+    margin: 0.1rem auto;
+    padding: 0.5rem 0;
+    width: 90%;
+    border-top: 2px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
+}
+
+label {
+    color: #7a7c7e;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.contact-section * input {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #eff0f1;
+    border-radius: 4px;
+    border: none;
+}
+
+input::placeholder {
+    text-align: right;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #a0a4a7;
+}
+
+#state-select {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 3rem;
+    background-color: #eff0f1;
+    border: none;
+    border-radius: 4px;
+    color: #a0a4a7;
+}
+
+#zip-code {
+    display: grid;
+    width: 50%;
+}
+
+.newsletter-section {
+    margin: 0.1rem auto;
+    padding: 0.5rem 0;
+    width: 90%;
+}
+
+.checkbox-newsletter {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+.newsletter-section p {
+    color: #7a7c7e;
+}
+
+.check {
+    padding: 0.5rem 0;
+}
+
+.check label {
+    padding-left: 0.5rem;
+
+}
+
+textarea {
+	resize: none;
+    width: 99%;
+    height: 8rem;
+    border-radius: 6px;
+    border: none;
+    background: #eff0f1;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background: #4ebbb5;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #111212;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        letter-spacing: 0.5px;
+    }
+
+    .headering {
+        width: 54%;
+    }
+
+    header h2 {
+        padding-top: 3rem;
+    }
+
+    header p {
+        padding-bottom: 1.2rem;
+    }
+
+    .contact-section h2 {
+        padding-top: 1.5rem;
+    }
+
+    form {
+        width: 60%;
+        margin: auto;
+    }
+
+    .input-form {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .input-form label {
+        flex:1;
+    }
+
+    .input-form input {
+        flex: 2;
+    }
+
+    .input-form select {
+        flex:2;
+    }
+
+    .small-input {
+        width: 70%;
+    }
+}

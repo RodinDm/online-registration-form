@@ -1,132 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online registration</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <header>
-        <h1>The code review</h1>
-        <div class="headering">
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
-    </header>
-    
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online registration</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
-        <form name="online-form" action="#!" method="post">
+        <header>
+            <h1>The code review</h1>
+            <div class="heading">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+        </header>
 
-            <section class="contact-section">
+        <main>
 
-                <h2>Contact information</h2>
-                <div class="input-form">
-                    <label for="name">Full Name</label>
-                    <input id="name" type="text" name="name" placeholder="Required" required>
-                </div>
+            <form name="online-form" action="#!" method="post">
 
-                <div class="input-form">
-                    <label for="email">Email Adress</label>
-                    <input id="email" type="email" name="email" placeholder="Required" required>
-                </div>
+                <section class="contact-section">
 
-                <div class="input-form">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" name="phone">
-                </div>
+                    <h2>Contact information</h2>
 
-                <div class="input-form">
-                    <label for="street">Street Address</label>
-                    <input id="street" type="text" name="street" autofocus>
-                </div>
-
-                <div class="input-form">
-                    <label for="city">City</label>
-                    <input id="city" type="text" name="city">
-                </div>
-
-                <div class="input-form">
-                    <label for="state-select">State</label>
-                    <select name="state" id="state-select">
-                        <option value="1">1</option>
-                        <option value="2" selected>Choose State</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-
-                <div class="input-form small-input">
-                    <label for="zip-code">Zip Code</label>
-                    <input id="zip-code" type="text" name="zip-code">
-                </div>
-
-            </section>
-
-            <section class="newsletter-section">
-
-                <h2>Newsletter</h2>
-
-                <div class="checkbox-newsletter">
-
-                    <p>Select the newsletters you would like to recieve</p>
-
-                    <div class="check">
-                        <input id="html-news" type="checkbox" name="html news" value="HTML News" checked>
-                        <label for="html-news">HTML News</label>
+                    <div class="input-form">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" name="name" placeholder="Required" required>
                     </div>
 
-                    <div class="check">
-                        <input id="css-news" type="checkbox" name="css news" value="CSS News">
-                        <label for="css-news">CSS News</label>
+                    <div class="input-form">
+                        <label for="email">Email Adress</label>
+                        <input id="email" type="email" name="email" placeholder="Required" required>
                     </div>
 
-                    <div class="check">
-                        <input id="javascript-news" type="checkbox" name="javascript news" value="Javascript News">
-                        <label for="javascript-news">Javascript News</label>
+                    <div class="input-form">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" name="phone">
                     </div>
 
-                </div>
-
-                <div class="radio-newsletter">
-
-                    <p>Newsletter format</p>
-
-                    <div class="check">
-                        <input id="html-format" type="radio" name="format" value="html" checked>
-                        <label for="html-format">HTML</label>
+                    <div class="input-form">
+                        <label for="street">Street Address</label>
+                        <input id="street" type="text" name="street" autofocus>
                     </div>
 
-                    <div class="check">
-                        <input id="plaintext-format" type="radio" name="format" value="plain text">
-                        <label for="plaintext-format">Plain text</label>
+                    <div class="input-form">
+                        <label for="city">City</label>
+                        <input id="city" type="text" name="city">
                     </div>
 
-                </div>
+                    <div class="input-form">
+                        <label for="state-select">State</label>
+                        <select name="state" id="state-select">
+                            <option value="" selected disabled>Choose State</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
 
-                <div class="text-area">
-                    <p>Other topics you'd like to hear about</p>
-                    <textarea id="textfield" name="text-area"></textarea>
-                </div>
+                    <div class="input-form small-input">
+                        <label for="zip-code">Zip Code</label>
+                        <input id="zip-code" type="text" name="zip-code">
+                    </div>
 
-                <div class="submit-button">
-                    <button type="submit">Sign Up</button>
-                </div>
+                </section>
 
-            </section>
+                <section class="newsletter-section">
 
+                    <h2>Newsletter</h2>
 
-        </form>
+                    <div class="newsletter-checkbox">
 
-    </main>
+                        <p>Select the newsletters you would like to recieve</p>
 
-    <footer>
-        <p>Copyright The Code Review</p>
-    </footer>
+                        <div class="check">
+                            <input id="html-news" type="checkbox" name="html news" value="HTML News" checked>
+                            <label for="html-news">HTML News</label>
+                        </div>
 
-</body>
+                        <div class="check">
+                            <input id="css-news" type="checkbox" name="css news" value="CSS News">
+                            <label for="css-news">CSS News</label>
+                        </div>
+
+                        <div class="check">
+                            <input id="javascript-news" type="checkbox" name="javascript news" value="Javascript News">
+                            <label for="javascript-news">Javascript News</label>
+                        </div>
+
+                    </div>
+
+                    <div class="newsletter-radio">
+
+                        <p>Newsletter format</p>
+
+                        <div class="check">
+                            <input id="html-format" type="radio" name="format" value="html" checked>
+                            <label for="html-format">HTML</label>
+                        </div>
+
+                        <div class="check">
+                            <input id="plaintext-format" type="radio" name="format" value="plain text">
+                            <label for="plaintext-format">Plain text</label>
+                        </div>
+
+                    </div>
+
+                    <div class="newsletter-textarea">
+                        <p>Other topics you'd like to hear about</p>
+                        <textarea id="textfield" name="text-area"></textarea>
+                    </div>
+
+                    <div class="newsletter-submit-button">
+                        <button type="submit">Sign Up</button>
+                    </div>
+
+                </section>
+            </form>
+        </main>
+
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
+
+    </body>
 </html>

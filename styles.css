@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Merriweather', serif;
     margin: auto;
@@ -25,12 +29,35 @@ p {
     color: #bec2c5;
 }
 
-label {
-    min-width: 200px;
-    max-width: 200px;
+button {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background: #4ebbb5;
+    font-size: 1.5rem;
 }
 
-.headering {
+button:hover {
+    background-color: #111212;
+}
+
+input::placeholder {
+    text-align: right;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #a0a4a7;
+}
+
+label {
+    color: #7a7c7e;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.heading {
     margin: auto;
     padding-bottom: 1.5rem;
     text-align: center;
@@ -56,15 +83,12 @@ header p {
     border-bottom: 2px solid #2d3945;
 }
 
-label {
-    color: #7a7c7e;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.contact-section * input {
+.contact-section input,
+.contact-section select {
+    display: block;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    padding: 0 .75rem;
     width: 100%;
     height: 2.5rem;
     background-color: #eff0f1;
@@ -72,27 +96,11 @@ label {
     border: none;
 }
 
-input::placeholder {
-    text-align: right;
-    margin-right: 1rem;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #a0a4a7;
-}
-
-#state-select {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 3rem;
-    background-color: #eff0f1;
-    border: none;
-    border-radius: 4px;
+.contact-section select {
     color: #a0a4a7;
 }
 
 #zip-code {
-    display: grid;
     width: 50%;
 }
 
@@ -102,14 +110,12 @@ input::placeholder {
     width: 90%;
 }
 
-.checkbox-newsletter {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.5rem;
-}
-
 .newsletter-section p {
     color: #7a7c7e;
+}
+
+.newsletter-checkbox {
+    padding-bottom: 0.5rem;
 }
 
 .check {
@@ -118,12 +124,11 @@ input::placeholder {
 
 .check label {
     padding-left: 0.5rem;
-
 }
 
 textarea {
-	resize: none;
-    width: 99%;
+    resize: none;
+    width: 100%;
     height: 8rem;
     border-radius: 6px;
     border: none;
@@ -135,21 +140,6 @@ textarea {
     justify-content: center;
 }
 
-button {
-    width: 100%;
-    margin: 2rem auto;
-    padding: 2rem 0;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    background: #4ebbb5;
-    font-size: 1.5rem;
-}
-
-button:hover {
-    background-color: #111212;
-}
-
 footer {
     text-align: center;
 }
@@ -159,15 +149,15 @@ footer {
         letter-spacing: 0.5px;
     }
 
-    .headering {
+    .heading {
         width: 54%;
     }
 
-    header h2 {
+    .heading h2 {
         padding-top: 3rem;
     }
 
-    header p {
+    .heading p {
         padding-bottom: 1.2rem;
     }
 
@@ -184,7 +174,16 @@ footer {
         display: flex;
         align-items: baseline;
     }
-    
+
+    .input-form label {
+        width: 150px;
+    }
+
+    .input-form input,
+    .input-form select {
+        flex: 1;
+    }
+
     .small-input {
         width: 70%;
     }
